@@ -1,6 +1,6 @@
 # Badger Vehicle Shipping — SEO & Google-compliance audit (Oct 12, 2026)
 
-Scope: all 29 pages in this folder. Tools: custom crawler (titles, metas, headings, canonicals, schema, links, images, duplicate content), Google Lighthouse 13.5 (SEO, Accessibility, Best Practices), Playwright render at 1366px and 400px.
+Scope: all 33 pages in this folder. Tools: custom crawler (titles, metas, headings, canonicals, schema, links, images, duplicate content), Google Lighthouse 13.5 (SEO, Accessibility, Best Practices), Playwright render at 1366px and 400px.
 
 ## Results after fixes
 | Check | Result |
@@ -12,14 +12,14 @@ Scope: all 29 pages in this folder. Tools: custom crawler (titles, metas, headin
 | Meta descriptions | All 70–155 chars, unique |
 | H1 | Exactly one per page; H1 → H2 → H3 order correct (hidden H2 added above the quote widget so its H3 no longer skips a level) |
 | Canonical / lang / viewport / robots | Present on every page; 404 is noindex |
-| Structured data | Valid JSON-LD on every page: Organization (home), LocalBusiness + geo (8 offices), Service (8 services), BreadcrumbList (all), FAQPage (where FAQs exist) |
+| Structured data | Valid JSON-LD on every page: Organization (home), LocalBusiness + geo (12 offices), Service (8 services), BreadcrumbList (all), FAQPage (where FAQs exist) |
 | Internal links | 0 broken; every page reachable from nav + footer; breadcrumbs on all subpages |
 | Images | All have alt text; logo served as WebP (21 KB, was 199 KB PNG) with width/height to prevent layout shift; lazy-loaded below the fold; proper 32px favicon + Apple touch icon |
 | Mobile | No horizontal overflow at 400px on any page tested; tap targets pass |
 | Phone/email links | Rendered into the HTML at build time (previously filled only by JavaScript), so crawlers see real numbers |
 | Duplicate content | Location pages de-templated: shared service grid and 3-step block replaced with unique per-city copy; generic FAQs dropped. Body-text similarity between any two office pages now 0.45–0.66 (was 0.67–0.80). Each office page carries 1,075–1,150 words of unique body copy |
 | Third-party references | Quote widget's static HTML now says "Badger Vehicle Shipping" and links to badgervehicleshipping.com (previously defaulted to Ship Guy until JS ran) |
-| Sitemap / robots | sitemap.xml with all 29 URLs; robots.txt allows all and points to the sitemap |
+| Sitemap / robots | sitemap.xml with all 33 URLs; robots.txt allows all and points to the sitemap |
 | Security headers | `_headers` adds nosniff, frame, referrer and permissions policies; 1-year immutable cache on /assets |
 
 ## Google policy risk review
@@ -32,7 +32,7 @@ Scope: all 29 pages in this folder. Tools: custom crawler (titles, metas, headin
 
 ## Still to do after launch (cannot be done from files)
 - Add the site to Google Search Console (DNS or HTML-tag verification), submit sitemap.xml, request indexing on the homepage and /locations/.
-- Create/claim a Google Business Profile for each office with name, address and phone matching the office page exactly, and link each GBP to its /locations/ page.
+- Create/claim a Google Business Profile for each of the 12 offices with name, address and phone matching the office page exactly, and link each GBP to its /locations/ page.
 - Add real customer reviews (a reviews section is ready to be added; I will not fabricate any).
 - Add one or two real photographs (trucks, deliveries); Google favors pages with original images and the site currently has only the logo.
 - Set up Google Analytics 4 / Tag Manager if wanted (not included; nothing is tracking visitors yet).

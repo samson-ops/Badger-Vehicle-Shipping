@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About Badger Vehicle Shipping</title>
-<meta name="description" content="Licensed, bonded, insured auto transport broker based in Madison, WI with eight local offices. How we vet carriers and why customers choose us.">
+<meta name="description" content="Licensed, bonded, insured auto transport broker based in Madison, WI with twelve local offices. How we vet carriers and why customers choose us.">
 <link rel="canonical" href="https://www.badgervehicleshipping.com/about/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About Badger Vehicle Shipping">
-<meta property="og:description" content="Licensed, bonded, insured auto transport broker based in Madison, WI with eight local offices. How we vet carriers and why customers choose us.">
+<meta property="og:description" content="Licensed, bonded, insured auto transport broker based in Madison, WI with twelve local offices. How we vet carriers and why customers choose us.">
 <meta property="og:url" content="https://www.badgervehicleshipping.com/about/">
 <meta property="og:image" content="https://www.badgervehicleshipping.com/assets/logo.png">
 <meta property="og:site_name" content="Badger Vehicle Shipping">
@@ -80,7 +80,11 @@ nav.main a:hover{color:var(--bv-blue)}
 .mobile-nav.open{display:block}
 .mobile-nav .wrap{display:flex;flex-direction:column;padding-block:12px}
 .mobile-nav a{padding:12px 0;color:var(--bv-navy);text-decoration:none;font-weight:600;border-bottom:1px solid var(--bv-mist)}
-@media(max-width:900px){nav.main,.hdr-cta .bv-outline{display:none}.nav-toggle{display:inline-flex}}
+@media(max-width:900px){nav.main,.hdr-cta .bv-outline{display:none}.nav-toggle{display:inline-flex}
+  header.site .wrap{min-height:64px;gap:10px}.logo img{height:40px}
+  .hdr-cta{gap:8px}.hdr-cta .bv-primary{white-space:nowrap;padding:10px 14px;font-size:14px}
+  .topbar .wrap{justify-content:center}.topbar .tag{display:none}}
+@media(max-width:400px){.hdr-cta .bv-primary .num{display:none}}
 
 /* ---------- Hero ---------- */
 .hero{background:linear-gradient(180deg,var(--bv-mist) 0%,#fff 100%);padding-block:56px 72px;overflow:hidden;position:relative}
@@ -101,7 +105,18 @@ nav.main a:hover{color:var(--bv-blue)}
 .creds .lic svg{width:16px;height:16px;color:var(--bv-blue)}
 .quote-col{display:flex;justify-content:center}
 .quote-col .pquote{width:100%;max-width:440px}
-@media(max-width:960px){.hero .wrap{grid-template-columns:1fr}.points{grid-template-columns:1fr 1fr}}
+@media(max-width:960px){
+  .hero{padding-block:28px 48px}
+  .hero .wrap{grid-template-columns:1fr;gap:18px}
+  /* mobile: quote tool sits directly under the H1 */
+  .hero .wrap>div:first-child{display:contents}
+  .hero .crumbs,.hero .hero-pill{order:-3;margin-bottom:0}
+  .hero h1{order:-2;font-size:clamp(26px,7vw,34px)}
+  .hero .quote-col{order:-1}
+  .hero .lede{order:1;margin-top:4px}
+  .hero .points,.hero .hero-ctas{order:2}
+  .points{grid-template-columns:1fr 1fr}
+}
 @media(max-width:560px){.points{grid-template-columns:1fr}}
 
 /* ---------- Stats ---------- */
@@ -247,7 +262,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.badgervehicleshipping.com/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://www.badgervehicleshipping.com/about/"}]}]</script>
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span><strong>Nationwide auto transport</strong> · Open &amp; enclosed · Door to door</span><span>Questions? <a data-site-tel href="tel:+16084202685">(608) 420-2685</a></span></div></div>
+<div class="topbar"><div class="wrap"><span class="tag"><strong>Nationwide auto transport</strong> · Open &amp; enclosed · Door to door</span><span>Questions? <a data-site-tel href="tel:+16084202685">(608) 420-2685</a></span></div></div>
 
 <header class="site">
   <div class="wrap">
@@ -262,7 +277,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
     </nav>
     <div class="hdr-cta">
       <a class="btn bv-outline" href="/#quote">Get a Quote</a>
-      <a class="btn bv-primary" data-site-tel data-site-tel-prefix="Call " href="tel:+16084202685">Call (608) 420-2685</a>
+      <a class="btn bv-primary" data-site-tel data-site-tel-prefix="Call " href="tel:+16084202685">Call <span class="num">(608) 420-2685</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -271,11 +286,11 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
   </div></div>
 </header>
 <main id="top">
-<section class="hero solo"><div class="wrap"><div><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span>About</span></nav><h1>About Badger Vehicle Shipping</h1><p class="lede">We are a Wisconsin auto transport broker with eight local offices and a nationwide carrier network. Our job is simple: find the right truck for your vehicle, verify it is licensed and insured, and stay on the phone with you until the car is in your driveway.</p>
+<section class="hero solo"><div class="wrap"><div><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span>About</span></nav><h1>About Badger Vehicle Shipping</h1><p class="lede">We are a Wisconsin auto transport broker with twelve local offices and a nationwide carrier network. Our job is simple: find the right truck for your vehicle, verify it is licensed and insured, and stay on the phone with you until the car is in your driveway.</p>
       <div class="hero-ctas"><a class="btn bv-primary" href="/#quote">Get an Instant Quote</a><a class="btn bv-outline" href="tel:+16084202685">Call (608) 420-2685</a></div></div></div></section>
 <section class="sec tint"><div class="wrap"><div class="sec-head"><h2>What We Do</h2></div><div class="prose"><p>Badger Vehicle Shipping arranges the transport of cars, trucks, SUVs, motorcycles and collector vehicles between any two points in the United States. We are a licensed and bonded broker registered with the Federal Motor Carrier Safety Administration. That means we do not own the trucks; we contract with the carriers that do, which is how we can find capacity on any lane, in any season, open or enclosed.</p>
 <p>What sets a good broker apart is who it will and will not dispatch to. Every carrier we use is screened for active operating authority, a clean safety record and current cargo insurance, and we re-verify the insurance before every dispatch. If a carrier cannot show us a certificate, it does not get the load.</p></div></div></section>
-<section class="sec"><div class="wrap"><div class="sec-head"><h2>Why Wisconsin Customers Choose Us</h2></div><div class="grid3"><div class="card"><h3>Local offices</h3><p>Eight offices from Eau Claire to Kenosha, each with a local number. You are calling someone who knows your roads.</p></div><div class="card"><h3>All-in pricing</h3><p>The quote is the price. Carrier, broker fee, fuel and insurance included; nothing added at pickup or delivery.</p></div><div class="card"><h3>Vetted carriers</h3><p>License, safety record and cargo insurance checked before every dispatch.</p></div><div class="card"><h3>One point of contact</h3><p>The person who quotes you is the person who manages your move.</p></div><div class="card"><h3>Snowbird specialists</h3><p>Wisconsin to Florida, Arizona and Texas every fall and back every spring is our busiest lane.</p></div><div class="card"><h3>Honest windows</h3><p>We tell you the realistic pickup and transit window up front, including in winter.</p></div></div></div></section>
+<section class="sec"><div class="wrap"><div class="sec-head"><h2>Why Wisconsin Customers Choose Us</h2></div><div class="grid3"><div class="card"><h3>Local offices</h3><p>Twelve offices from Eau Claire to Kenosha, each with a local number. You are calling someone who knows your roads.</p></div><div class="card"><h3>All-in pricing</h3><p>The quote is the price. Carrier, broker fee, fuel and insurance included; nothing added at pickup or delivery.</p></div><div class="card"><h3>Vetted carriers</h3><p>License, safety record and cargo insurance checked before every dispatch.</p></div><div class="card"><h3>One point of contact</h3><p>The person who quotes you is the person who manages your move.</p></div><div class="card"><h3>Snowbird specialists</h3><p>Wisconsin to Florida, Arizona and Texas every fall and back every spring is our busiest lane.</p></div><div class="card"><h3>Honest windows</h3><p>We tell you the realistic pickup and transit window up front, including in winter.</p></div></div></div></section>
 <section class="sec tint"><div class="wrap"><div class="sec-head"><h2>How to Reach Us</h2></div><div class="prose"><p>Call the main line at (608) 420-2685, pick the office nearest you on the locations page, or get an instant quote online and we will follow up. We are a Wisconsin company and we answer the phone.</p></div></div></section>
 <section class="cta-band"><div class="wrap">
     <h2>Ready to Ship Your Vehicle?</h2><p>Get a free, no-obligation quote in about 30 seconds.</p>
@@ -289,7 +304,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
       <div class="foot-brand"><img src="/assets/logo.webp" width="900" height="258" loading="lazy" alt="Badger Vehicle Shipping"><p>Licensed, insured nationwide auto transport. Open and enclosed carriers, door to door, in all 50 states.</p></div>
       <div><p class="foot-h">Company</p><ul><li><a href="/how-it-works/">How It Works</a></li><li><a href="/about/">About Us</a></li><li><a href="/car-shipping-cost/">Car Shipping Cost</a></li><li><a href="/car-shipping-checklist/">Preparation Checklist</a></li><li><a href="/cross-country-car-shipping/">Cross-Country Shipping</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/contact/">Contact</a></li></ul></div>
       <div><p class="foot-h">Services</p><ul><li><a href="/services/open-car-transport/">Open Car Transport</a></li><li><a href="/services/enclosed-auto-transport/">Enclosed Auto Transport</a></li><li><a href="/services/door-to-door-car-shipping/">Door-to-Door Car Shipping</a></li><li><a href="/services/expedited-car-shipping/">Expedited Car Shipping</a></li><li><a href="/services/snowbird-car-shipping/">Snowbird Car Shipping</a></li><li><a href="/services/military-car-shipping/">Military Car Shipping</a></li><li><a href="/services/state-to-state-car-shipping/">State-to-State Car Shipping</a></li><li><a href="/services/auction-car-transport/">Auction Car Transport</a></li><li><a href="/services/">All services</a></li></ul></div>
-      <div><p class="foot-h">Wisconsin Offices</p><ul><li><a href="/locations/green-bay-wi/">Green Bay, WI</a></li><li><a href="/locations/eau-claire-wi/">Eau Claire, WI</a></li><li><a href="/locations/kenosha-wi/">Kenosha, WI</a></li><li><a href="/locations/oshkosh-wi/">Oshkosh, WI</a></li><li><a href="/locations/fond-du-lac-wi/">Fond du Lac, WI</a></li><li><a href="/locations/madison-wi/">Madison, WI</a></li><li><a href="/locations/waukesha-wi/">Waukesha, WI</a></li><li><a href="/locations/janesville-wi/">Janesville, WI</a></li><li><a href="/locations/">All locations</a></li></ul></div>
+      <div><p class="foot-h">Wisconsin Offices</p><ul><li><a href="/locations/green-bay-wi/">Green Bay, WI</a></li><li><a href="/locations/eau-claire-wi/">Eau Claire, WI</a></li><li><a href="/locations/kenosha-wi/">Kenosha, WI</a></li><li><a href="/locations/oshkosh-wi/">Oshkosh, WI</a></li><li><a href="/locations/fond-du-lac-wi/">Fond du Lac, WI</a></li><li><a href="/locations/madison-wi/">Madison, WI</a></li><li><a href="/locations/waukesha-wi/">Waukesha, WI</a></li><li><a href="/locations/janesville-wi/">Janesville, WI</a></li><li><a href="/locations/la-crosse-wi/">La Crosse, WI</a></li><li><a href="/locations/sheboygan-wi/">Sheboygan, WI</a></li><li><a href="/locations/milwaukee-wi/">Milwaukee, WI</a></li><li><a href="/locations/wausau-wi/">Wausau, WI</a></li><li><a href="/locations/">All locations</a></li></ul></div>
       <div class="foot-contact"><p class="foot-h">Contact</p><a data-site-tel href="tel:+16084202685"><b>(608) 420-2685</b></a><a data-site-email href="mailto:info@badgervehicleshipping.com"><span data-site-email-text>info@badgervehicleshipping.com</span></a><span>Support when you need it.</span></div>
     </div>
     <div class="foot-bottom">
@@ -302,7 +317,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
 <script>
 /* ===== SITE DETAILS — edit these ===== */
 window.SITE = {
-  phoneDisplay: '(608) 420-2685',
+  phoneDisplay: '(608) 420-2685', // already rendered into the HTML; JS only fills anything left blank
   phoneTel:     '+16084202685',
   email:        'info@badgervehicleshipping.com'
 };
@@ -310,7 +325,7 @@ window.SITE = {
   var s=window.SITE||{};
   document.querySelectorAll('[data-site-tel]').forEach(function(a){
     if(s.phoneTel) a.href='tel:'+s.phoneTel;
-    if(s.phoneDisplay){ var pre=a.getAttribute('data-site-tel-prefix')||''; var b=a.querySelector('b'); (b||a).textContent=pre+s.phoneDisplay; }
+    if(s.phoneDisplay && !/\d{3}/.test(a.textContent)){ var pre=a.getAttribute('data-site-tel-prefix')||''; var b=a.querySelector('b'); (b||a).textContent=pre+s.phoneDisplay; }
   });
   document.querySelectorAll('[data-site-email]').forEach(function(a){ if(s.email){ a.href='mailto:'+s.email; var t=a.querySelector('[data-site-email-text]'); if(t) t.textContent=s.email; } });
   var y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();

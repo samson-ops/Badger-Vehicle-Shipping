@@ -8,8 +8,8 @@ Deploy this folder as-is to Cloudflare Pages (site root = this folder).
 - `/privacy/`, `/terms/`, `/licensing/` — legal pages (review wording with your attorney/compliance before launch)
 - `404.html` — Cloudflare Pages serves it automatically; `_redirects` maps the old `/privacy` style links
 - `/` — homepage (`index.html`)
-- `/locations/` — hub page listing the eight Wisconsin offices
-- `/locations/<city>-wi/` for green-bay, eau-claire, kenosha, oshkosh, fond-du-lac, madison, waukesha, janesville — SEO location pages (unique copy, local phone, address, Google Map, LocalBusiness + FAQ + Breadcrumb schema, quote tool)
+- `/locations/` — hub page listing the twelve Wisconsin offices
+- `/locations/<city>-wi/` for green-bay, eau-claire, kenosha, oshkosh, fond-du-lac, madison, waukesha, janesville, la-crosse, sheboygan, milwaukee, wausau — SEO location pages (unique copy, local phone, address, Google Map, LocalBusiness + FAQ + Breadcrumb schema, quote tool)
 - `sitemap.xml`, `robots.txt` — submit the sitemap in Google Search Console after deploy
 
 ## Lead tracking
@@ -18,7 +18,7 @@ Deploy this folder as-is to Cloudflare Pages (site root = this folder).
 
 ## Phone numbers (already set)
 - Main: (608) 420-2685 — homepage and locations hub
-- Green Bay (920) 678-7550 · Eau Claire (715) 999-7030 · Kenosha (262) 360-6577 · Oshkosh (920) 824-3407 · Fond du Lac (920) 638-6732 · Madison (608) 420-2685 · Waukesha (262) 384-6890 · Janesville (608) 401-4120 — each office page uses its own number everywhere, including inside the quote tool.
+- Green Bay (920) 678-7550 · Eau Claire (715) 999-7030 · Kenosha (262) 360-6577 · Oshkosh (920) 824-3407 · Fond du Lac (920) 638-6732 · Madison (608) 420-2685 · Waukesha (262) 384-6890 · Janesville (608) 401-4120 · La Crosse (608) 549-5349 · Sheboygan (920) 280-3485 · Milwaukee (414) 261-3002 · Wausau (715) 519-9264 — each office page uses its own number everywhere, including inside the quote tool.
 
 ## Before going live
 1. Confirm the email `info@badgervehicleshipping.com` (set in `window.SITE` near the bottom of each page).

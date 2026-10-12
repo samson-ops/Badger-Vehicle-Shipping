@@ -80,7 +80,11 @@ nav.main a:hover{color:var(--bv-blue)}
 .mobile-nav.open{display:block}
 .mobile-nav .wrap{display:flex;flex-direction:column;padding-block:12px}
 .mobile-nav a{padding:12px 0;color:var(--bv-navy);text-decoration:none;font-weight:600;border-bottom:1px solid var(--bv-mist)}
-@media(max-width:900px){nav.main,.hdr-cta .bv-outline{display:none}.nav-toggle{display:inline-flex}}
+@media(max-width:900px){nav.main,.hdr-cta .bv-outline{display:none}.nav-toggle{display:inline-flex}
+  header.site .wrap{min-height:64px;gap:10px}.logo img{height:40px}
+  .hdr-cta{gap:8px}.hdr-cta .bv-primary{white-space:nowrap;padding:10px 14px;font-size:14px}
+  .topbar .wrap{justify-content:center}.topbar .tag{display:none}}
+@media(max-width:400px){.hdr-cta .bv-primary .num{display:none}}
 
 /* ---------- Hero ---------- */
 .hero{background:linear-gradient(180deg,var(--bv-mist) 0%,#fff 100%);padding-block:56px 72px;overflow:hidden;position:relative}
@@ -101,7 +105,18 @@ nav.main a:hover{color:var(--bv-blue)}
 .creds .lic svg{width:16px;height:16px;color:var(--bv-blue)}
 .quote-col{display:flex;justify-content:center}
 .quote-col .pquote{width:100%;max-width:440px}
-@media(max-width:960px){.hero .wrap{grid-template-columns:1fr}.points{grid-template-columns:1fr 1fr}}
+@media(max-width:960px){
+  .hero{padding-block:28px 48px}
+  .hero .wrap{grid-template-columns:1fr;gap:18px}
+  /* mobile: quote tool sits directly under the H1 */
+  .hero .wrap>div:first-child{display:contents}
+  .hero .crumbs,.hero .hero-pill{order:-3;margin-bottom:0}
+  .hero h1{order:-2;font-size:clamp(26px,7vw,34px)}
+  .hero .quote-col{order:-1}
+  .hero .lede{order:1;margin-top:4px}
+  .hero .points,.hero .hero-ctas{order:2}
+  .points{grid-template-columns:1fr 1fr}
+}
 @media(max-width:560px){.points{grid-template-columns:1fr}}
 
 /* ---------- Stats ---------- */
@@ -247,7 +262,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.badgervehicleshipping.com/"}, {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://www.badgervehicleshipping.com/faq/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does it cost to ship a car?", "acceptedAnswer": {"@type": "Answer", "text": "Price depends on distance, vehicle size, open or enclosed transport, timing and season. Typical open-carrier moves from Wisconsin run $350–$600 under 300 miles and $1,300–$1,900 to the West Coast. The instant quote is the exact all-in number for your route."}}, {"@type": "Question", "name": "How long will my shipment take?", "acceptedAnswer": {"@type": "Answer", "text": "Pickup is usually 1 to 5 days after booking. Transit after pickup runs about 1 to 2 days per 500 miles: 1 to 2 days to Chicago or Minneapolis, 4 to 7 days to Florida or Texas, 6 to 9 days to the West Coast."}}, {"@type": "Question", "name": "Is my vehicle insured during transport?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every carrier we dispatch holds active cargo insurance, which we verify before the truck is assigned. Your vehicle is covered from loading to delivery. Personal items inside the car are not covered."}}, {"@type": "Question", "name": "What is the difference between open and enclosed transport?", "acceptedAnswer": {"@type": "Answer", "text": "Open is the standard two-level carrier most vehicles ride on; it is the most affordable and widely available. Enclosed is a covered trailer that protects from weather and debris, costs 30 to 50 percent more, and is the choice for luxury, exotic, classic and new vehicles."}}, {"@type": "Question", "name": "Do I have to pay a deposit?", "acceptedAnswer": {"@type": "Answer", "text": "Getting a quote is free. Payment terms are confirmed at booking before anything is charged. Most customers pay a portion at booking and the balance to the carrier at delivery."}}, {"@type": "Question", "name": "Can you ship a car that does not run?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Tell us at booking so we assign a carrier with a winch. A vehicle that does not roll or steer needs a forklift load, which adds cost."}}, {"@type": "Question", "name": "Can I put personal items in the car?", "acceptedAnswer": {"@type": "Answer", "text": "Carriers allow up to about 100 pounds in the trunk or below the window line, at your own risk and not covered by insurance. No valuables, electronics, documents or hazardous materials."}}, {"@type": "Question", "name": "Do I need to be there for pickup and delivery?", "acceptedAnswer": {"@type": "Answer", "text": "You or anyone over 18 you authorize must be present to release the vehicle, inspect it and sign the bill of lading at both ends."}}, {"@type": "Question", "name": "What if the truck cannot reach my street?", "acceptedAnswer": {"@type": "Answer", "text": "A loaded hauler is 75 feet long. If your street is too tight, the driver meets you at the nearest safe open area, usually a shopping-center lot a few minutes away. We tell you at booking if we expect that."}}, {"@type": "Question", "name": "How do I prepare my car?", "acceptedAnswer": {"@type": "Answer", "text": "Wash it, leave a quarter tank, remove personal items and transponders, fold in mirrors, photograph it, and have a key ready. Our preparation checklist has the full list."}}, {"@type": "Question", "name": "What if my car is damaged in transit?", "acceptedAnswer": {"@type": "Answer", "text": "Note the damage on the delivery bill of lading before signing, photograph it, and call us the same day. The carrier's cargo insurance covers transit damage and we help with the claim."}}, {"@type": "Question", "name": "Are you a broker or a carrier?", "acceptedAnswer": {"@type": "Answer", "text": "We are a licensed, bonded auto transport broker. We arrange your shipment with a vetted carrier from our network, verify its insurance and manage the move from quote to delivery. That is how almost all vehicle shipping in the U.S. works, and it is what lets us find a truck on any lane."}}, {"@type": "Question", "name": "Can I cancel?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, at no charge any time before the vehicle is dispatched to a carrier."}}, {"@type": "Question", "name": "Do you ship motorcycles, boats or RVs?", "acceptedAnswer": {"@type": "Answer", "text": "Motorcycles, yes, with specialized securing. For boats, RVs and oversized vehicles call the main line; we price those individually."}}]}]</script>
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span><strong>Nationwide auto transport</strong> · Open &amp; enclosed · Door to door</span><span>Questions? <a data-site-tel href="tel:+16084202685">(608) 420-2685</a></span></div></div>
+<div class="topbar"><div class="wrap"><span class="tag"><strong>Nationwide auto transport</strong> · Open &amp; enclosed · Door to door</span><span>Questions? <a data-site-tel href="tel:+16084202685">(608) 420-2685</a></span></div></div>
 
 <header class="site">
   <div class="wrap">
@@ -262,7 +277,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
     </nav>
     <div class="hdr-cta">
       <a class="btn bv-outline" href="/#quote">Get a Quote</a>
-      <a class="btn bv-primary" data-site-tel data-site-tel-prefix="Call " href="tel:+16084202685">Call (608) 420-2685</a>
+      <a class="btn bv-primary" data-site-tel data-site-tel-prefix="Call " href="tel:+16084202685">Call <span class="num">(608) 420-2685</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -922,7 +937,7 @@ window.PQ_CONFIG = {
       <div class="foot-brand"><img src="/assets/logo.webp" width="900" height="258" loading="lazy" alt="Badger Vehicle Shipping"><p>Licensed, insured nationwide auto transport. Open and enclosed carriers, door to door, in all 50 states.</p></div>
       <div><p class="foot-h">Company</p><ul><li><a href="/how-it-works/">How It Works</a></li><li><a href="/about/">About Us</a></li><li><a href="/car-shipping-cost/">Car Shipping Cost</a></li><li><a href="/car-shipping-checklist/">Preparation Checklist</a></li><li><a href="/cross-country-car-shipping/">Cross-Country Shipping</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/contact/">Contact</a></li></ul></div>
       <div><p class="foot-h">Services</p><ul><li><a href="/services/open-car-transport/">Open Car Transport</a></li><li><a href="/services/enclosed-auto-transport/">Enclosed Auto Transport</a></li><li><a href="/services/door-to-door-car-shipping/">Door-to-Door Car Shipping</a></li><li><a href="/services/expedited-car-shipping/">Expedited Car Shipping</a></li><li><a href="/services/snowbird-car-shipping/">Snowbird Car Shipping</a></li><li><a href="/services/military-car-shipping/">Military Car Shipping</a></li><li><a href="/services/state-to-state-car-shipping/">State-to-State Car Shipping</a></li><li><a href="/services/auction-car-transport/">Auction Car Transport</a></li><li><a href="/services/">All services</a></li></ul></div>
-      <div><p class="foot-h">Wisconsin Offices</p><ul><li><a href="/locations/green-bay-wi/">Green Bay, WI</a></li><li><a href="/locations/eau-claire-wi/">Eau Claire, WI</a></li><li><a href="/locations/kenosha-wi/">Kenosha, WI</a></li><li><a href="/locations/oshkosh-wi/">Oshkosh, WI</a></li><li><a href="/locations/fond-du-lac-wi/">Fond du Lac, WI</a></li><li><a href="/locations/madison-wi/">Madison, WI</a></li><li><a href="/locations/waukesha-wi/">Waukesha, WI</a></li><li><a href="/locations/janesville-wi/">Janesville, WI</a></li><li><a href="/locations/">All locations</a></li></ul></div>
+      <div><p class="foot-h">Wisconsin Offices</p><ul><li><a href="/locations/green-bay-wi/">Green Bay, WI</a></li><li><a href="/locations/eau-claire-wi/">Eau Claire, WI</a></li><li><a href="/locations/kenosha-wi/">Kenosha, WI</a></li><li><a href="/locations/oshkosh-wi/">Oshkosh, WI</a></li><li><a href="/locations/fond-du-lac-wi/">Fond du Lac, WI</a></li><li><a href="/locations/madison-wi/">Madison, WI</a></li><li><a href="/locations/waukesha-wi/">Waukesha, WI</a></li><li><a href="/locations/janesville-wi/">Janesville, WI</a></li><li><a href="/locations/la-crosse-wi/">La Crosse, WI</a></li><li><a href="/locations/sheboygan-wi/">Sheboygan, WI</a></li><li><a href="/locations/milwaukee-wi/">Milwaukee, WI</a></li><li><a href="/locations/wausau-wi/">Wausau, WI</a></li><li><a href="/locations/">All locations</a></li></ul></div>
       <div class="foot-contact"><p class="foot-h">Contact</p><a data-site-tel href="tel:+16084202685"><b>(608) 420-2685</b></a><a data-site-email href="mailto:info@badgervehicleshipping.com"><span data-site-email-text>info@badgervehicleshipping.com</span></a><span>Support when you need it.</span></div>
     </div>
     <div class="foot-bottom">
@@ -935,7 +950,7 @@ window.PQ_CONFIG = {
 <script>
 /* ===== SITE DETAILS — edit these ===== */
 window.SITE = {
-  phoneDisplay: '(608) 420-2685',
+  phoneDisplay: '(608) 420-2685', // already rendered into the HTML; JS only fills anything left blank
   phoneTel:     '+16084202685',
   email:        'info@badgervehicleshipping.com'
 };
@@ -943,7 +958,7 @@ window.SITE = {
   var s=window.SITE||{};
   document.querySelectorAll('[data-site-tel]').forEach(function(a){
     if(s.phoneTel) a.href='tel:'+s.phoneTel;
-    if(s.phoneDisplay){ var pre=a.getAttribute('data-site-tel-prefix')||''; var b=a.querySelector('b'); (b||a).textContent=pre+s.phoneDisplay; }
+    if(s.phoneDisplay && !/\d{3}/.test(a.textContent)){ var pre=a.getAttribute('data-site-tel-prefix')||''; var b=a.querySelector('b'); (b||a).textContent=pre+s.phoneDisplay; }
   });
   document.querySelectorAll('[data-site-email]').forEach(function(a){ if(s.email){ a.href='mailto:'+s.email; var t=a.querySelector('[data-site-email-text]'); if(t) t.textContent=s.email; } });
   var y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();

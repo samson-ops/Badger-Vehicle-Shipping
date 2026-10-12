@@ -80,7 +80,11 @@ nav.main a:hover{color:var(--bv-blue)}
 .mobile-nav.open{display:block}
 .mobile-nav .wrap{display:flex;flex-direction:column;padding-block:12px}
 .mobile-nav a{padding:12px 0;color:var(--bv-navy);text-decoration:none;font-weight:600;border-bottom:1px solid var(--bv-mist)}
-@media(max-width:900px){nav.main,.hdr-cta .bv-outline{display:none}.nav-toggle{display:inline-flex}}
+@media(max-width:900px){nav.main,.hdr-cta .bv-outline{display:none}.nav-toggle{display:inline-flex}
+  header.site .wrap{min-height:64px;gap:10px}.logo img{height:40px}
+  .hdr-cta{gap:8px}.hdr-cta .bv-primary{white-space:nowrap;padding:10px 14px;font-size:14px}
+  .topbar .wrap{justify-content:center}.topbar .tag{display:none}}
+@media(max-width:400px){.hdr-cta .bv-primary .num{display:none}}
 
 /* ---------- Hero ---------- */
 .hero{background:linear-gradient(180deg,var(--bv-mist) 0%,#fff 100%);padding-block:56px 72px;overflow:hidden;position:relative}
@@ -101,7 +105,18 @@ nav.main a:hover{color:var(--bv-blue)}
 .creds .lic svg{width:16px;height:16px;color:var(--bv-blue)}
 .quote-col{display:flex;justify-content:center}
 .quote-col .pquote{width:100%;max-width:440px}
-@media(max-width:960px){.hero .wrap{grid-template-columns:1fr}.points{grid-template-columns:1fr 1fr}}
+@media(max-width:960px){
+  .hero{padding-block:28px 48px}
+  .hero .wrap{grid-template-columns:1fr;gap:18px}
+  /* mobile: quote tool sits directly under the H1 */
+  .hero .wrap>div:first-child{display:contents}
+  .hero .crumbs,.hero .hero-pill{order:-3;margin-bottom:0}
+  .hero h1{order:-2;font-size:clamp(26px,7vw,34px)}
+  .hero .quote-col{order:-1}
+  .hero .lede{order:1;margin-top:4px}
+  .hero .points,.hero .hero-ctas{order:2}
+  .points{grid-template-columns:1fr 1fr}
+}
 @media(max-width:560px){.points{grid-template-columns:1fr}}
 
 /* ---------- Stats ---------- */
@@ -247,7 +262,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "LocalBusiness", "@id": "https://www.badgervehicleshipping.com/locations/waukesha-wi/#office", "name": "Badger Vehicle Shipping – Waukesha", "image": "https://www.badgervehicleshipping.com/assets/logo.png", "url": "https://www.badgervehicleshipping.com/locations/waukesha-wi/", "telephone": "+12623846890", "priceRange": "$$", "address": {"@type": "PostalAddress", "streetAddress": "1601 E Racine Ave #450", "addressLocality": "Waukesha", "addressRegion": "WI", "postalCode": "53186", "addressCountry": "US"}, "geo": {"@type": "GeoCoordinates", "latitude": 42.9965111, "longitude": -88.2032316}, "areaServed": [{"@type": "City", "name": "Downtown Waukesha"}, {"@type": "City", "name": "Brookfield"}, {"@type": "City", "name": "Pewaukee"}, {"@type": "City", "name": "New Berlin"}, {"@type": "City", "name": "Menomonee Falls"}, {"@type": "City", "name": "Sussex"}, {"@type": "City", "name": "Hartland"}, {"@type": "City", "name": "Delafield"}, {"@type": "City", "name": "Oconomowoc"}, {"@type": "City", "name": "Mukwonago"}], "parentOrganization": {"@type": "Organization", "name": "Badger Vehicle Shipping", "url": "https://www.badgervehicleshipping.com", "telephone": "+16084202685"}, "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Open Car Transport", "url": "https://www.badgervehicleshipping.com/services/open-car-transport/", "areaServed": "Waukesha, WI"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Enclosed Auto Transport", "url": "https://www.badgervehicleshipping.com/services/enclosed-auto-transport/", "areaServed": "Waukesha, WI"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door-to-Door Car Shipping", "url": "https://www.badgervehicleshipping.com/services/door-to-door-car-shipping/", "areaServed": "Waukesha, WI"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Expedited Car Shipping", "url": "https://www.badgervehicleshipping.com/services/expedited-car-shipping/", "areaServed": "Waukesha, WI"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Snowbird Car Shipping", "url": "https://www.badgervehicleshipping.com/services/snowbird-car-shipping/", "areaServed": "Waukesha, WI"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Military Car Shipping", "url": "https://www.badgervehicleshipping.com/services/military-car-shipping/", "areaServed": "Waukesha, WI"}}], "description": "Ship a car to or from Waukesha, WI with Badger Vehicle Shipping. Licensed, insured open and enclosed auto transport for Waukesha County and metro Milwaukee, door-to-door pickup, instant all-in quotes. Office on E Racine Ave. Call (262) 384-6890."}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.badgervehicleshipping.com/"}, {"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.badgervehicleshipping.com/locations/"}, {"@type": "ListItem", "position": 3, "name": "Waukesha, WI", "item": "https://www.badgervehicleshipping.com/locations/waukesha-wi/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does it cost to ship a car from Waukesha?", "acceptedAnswer": {"@type": "Answer", "text": "Use the instant quote tool for an all-in price with no fees added later. Price depends on distance, vehicle size, open or enclosed transport and how soon you need pickup. Waukesha's position on I-94 next to Milwaukee usually earns it a lower rate than most of the state."}}, {"@type": "Question", "name": "Do you pick up in Brookfield, Pewaukee, New Berlin and Oconomowoc?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We serve Waukesha, Brookfield, Pewaukee, New Berlin, Menomonee Falls, Sussex, Hartland, Delafield, Oconomowoc, Mukwonago, Muskego, Elm Grove and the west side of Milwaukee. If a hauler cannot safely reach your street, the driver meets you at a nearby open lot."}}, {"@type": "Question", "name": "How far in advance should I book?", "acceptedAnswer": {"@type": "Answer", "text": "One to two weeks is ideal. Book earlier for fall snowbird departures and spring returns, when Waukesha to Florida and Arizona lanes fill quickly."}}, {"@type": "Question", "name": "Where is your Waukesha office?", "acceptedAnswer": {"@type": "Answer", "text": "Badger Vehicle Shipping is at 1601 E Racine Ave #450, Waukesha, WI 53186. Call (262) 384-6890 or get an instant quote online."}}]}]</script>
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span><strong>Nationwide auto transport</strong> · Open &amp; enclosed · Door to door</span><span>Questions? <a data-site-tel href="tel:+12623846890">(262) 384-6890</a></span></div></div>
+<div class="topbar"><div class="wrap"><span class="tag"><strong>Nationwide auto transport</strong> · Open &amp; enclosed · Door to door</span><span>Questions? <a data-site-tel href="tel:+12623846890">(262) 384-6890</a></span></div></div>
 
 <header class="site">
   <div class="wrap">
@@ -262,7 +277,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
     </nav>
     <div class="hdr-cta">
       <a class="btn bv-outline" href="/#quote">Get a Quote</a>
-      <a class="btn bv-primary" data-site-tel data-site-tel-prefix="Call " href="tel:+12623846890">Call (262) 384-6890</a>
+      <a class="btn bv-primary" data-site-tel data-site-tel-prefix="Call " href="tel:+12623846890">Call <span class="num">(262) 384-6890</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -986,7 +1001,7 @@ window.PQ_CONFIG = {
     <p>Free, no-obligation quote in about 30 seconds, or call the Waukesha office.</p>
     <div class="hero-ctas"><a class="btn bv-light" href="#pquote">Get Your Free Quote</a><a class="btn bv-outline" href="tel:+12623846890">Call (262) 384-6890</a></div>
     <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Licensed &amp; insured</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>All-in pricing</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Local Waukesha office</li></ul>
-    <p style="margin-top:26px;font-size:14px">Other Wisconsin offices: <a href="/locations/green-bay-wi/">Green Bay</a> · <a href="/locations/eau-claire-wi/">Eau Claire</a> · <a href="/locations/kenosha-wi/">Kenosha</a> · <a href="/locations/oshkosh-wi/">Oshkosh</a> · <a href="/locations/fond-du-lac-wi/">Fond du Lac</a> · <a href="/locations/madison-wi/">Madison</a> · <a href="/locations/janesville-wi/">Janesville</a></p>
+    <p style="margin-top:26px;font-size:14px">Other Wisconsin offices: <a href="/locations/green-bay-wi/">Green Bay</a> · <a href="/locations/eau-claire-wi/">Eau Claire</a> · <a href="/locations/kenosha-wi/">Kenosha</a> · <a href="/locations/oshkosh-wi/">Oshkosh</a> · <a href="/locations/fond-du-lac-wi/">Fond du Lac</a> · <a href="/locations/madison-wi/">Madison</a> · <a href="/locations/janesville-wi/">Janesville</a> · <a href="/locations/la-crosse-wi/">La Crosse</a> · <a href="/locations/sheboygan-wi/">Sheboygan</a> · <a href="/locations/milwaukee-wi/">Milwaukee</a> · <a href="/locations/wausau-wi/">Wausau</a></p>
   </div>
 </section>
 </main>
@@ -996,7 +1011,7 @@ window.PQ_CONFIG = {
       <div class="foot-brand"><img src="/assets/logo.webp" width="900" height="258" loading="lazy" alt="Badger Vehicle Shipping"><p>Licensed, insured nationwide auto transport. Open and enclosed carriers, door to door, in all 50 states.</p></div>
       <div><p class="foot-h">Company</p><ul><li><a href="/how-it-works/">How It Works</a></li><li><a href="/about/">About Us</a></li><li><a href="/car-shipping-cost/">Car Shipping Cost</a></li><li><a href="/car-shipping-checklist/">Preparation Checklist</a></li><li><a href="/cross-country-car-shipping/">Cross-Country Shipping</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/contact/">Contact</a></li></ul></div>
       <div><p class="foot-h">Services</p><ul><li><a href="/services/open-car-transport/">Open Car Transport</a></li><li><a href="/services/enclosed-auto-transport/">Enclosed Auto Transport</a></li><li><a href="/services/door-to-door-car-shipping/">Door-to-Door Car Shipping</a></li><li><a href="/services/expedited-car-shipping/">Expedited Car Shipping</a></li><li><a href="/services/snowbird-car-shipping/">Snowbird Car Shipping</a></li><li><a href="/services/military-car-shipping/">Military Car Shipping</a></li><li><a href="/services/state-to-state-car-shipping/">State-to-State Car Shipping</a></li><li><a href="/services/auction-car-transport/">Auction Car Transport</a></li><li><a href="/services/">All services</a></li></ul></div>
-      <div><p class="foot-h">Wisconsin Offices</p><ul><li><a href="/locations/green-bay-wi/">Green Bay, WI</a></li><li><a href="/locations/eau-claire-wi/">Eau Claire, WI</a></li><li><a href="/locations/kenosha-wi/">Kenosha, WI</a></li><li><a href="/locations/oshkosh-wi/">Oshkosh, WI</a></li><li><a href="/locations/fond-du-lac-wi/">Fond du Lac, WI</a></li><li><a href="/locations/madison-wi/">Madison, WI</a></li><li><a href="/locations/waukesha-wi/">Waukesha, WI</a></li><li><a href="/locations/janesville-wi/">Janesville, WI</a></li><li><a href="/locations/">All locations</a></li></ul></div>
+      <div><p class="foot-h">Wisconsin Offices</p><ul><li><a href="/locations/green-bay-wi/">Green Bay, WI</a></li><li><a href="/locations/eau-claire-wi/">Eau Claire, WI</a></li><li><a href="/locations/kenosha-wi/">Kenosha, WI</a></li><li><a href="/locations/oshkosh-wi/">Oshkosh, WI</a></li><li><a href="/locations/fond-du-lac-wi/">Fond du Lac, WI</a></li><li><a href="/locations/madison-wi/">Madison, WI</a></li><li><a href="/locations/waukesha-wi/">Waukesha, WI</a></li><li><a href="/locations/janesville-wi/">Janesville, WI</a></li><li><a href="/locations/la-crosse-wi/">La Crosse, WI</a></li><li><a href="/locations/sheboygan-wi/">Sheboygan, WI</a></li><li><a href="/locations/milwaukee-wi/">Milwaukee, WI</a></li><li><a href="/locations/wausau-wi/">Wausau, WI</a></li><li><a href="/locations/">All locations</a></li></ul></div>
       <div class="foot-contact"><p class="foot-h">Contact</p><a data-site-tel href="tel:+12623846890"><b>(262) 384-6890</b></a><a data-site-email href="mailto:info@badgervehicleshipping.com"><span data-site-email-text>info@badgervehicleshipping.com</span></a><span>Support when you need it.</span></div>
     </div>
     <div class="foot-bottom">
@@ -1009,7 +1024,7 @@ window.PQ_CONFIG = {
 <script>
 /* ===== SITE DETAILS — edit these ===== */
 window.SITE = {
-  phoneDisplay: '(262) 384-6890',
+  phoneDisplay: '(262) 384-6890', // already rendered into the HTML; JS only fills anything left blank
   phoneTel:     '+12623846890',
   email:        'info@badgervehicleshipping.com'
 };
@@ -1017,7 +1032,7 @@ window.SITE = {
   var s=window.SITE||{};
   document.querySelectorAll('[data-site-tel]').forEach(function(a){
     if(s.phoneTel) a.href='tel:'+s.phoneTel;
-    if(s.phoneDisplay){ var pre=a.getAttribute('data-site-tel-prefix')||''; var b=a.querySelector('b'); (b||a).textContent=pre+s.phoneDisplay; }
+    if(s.phoneDisplay && !/\d{3}/.test(a.textContent)){ var pre=a.getAttribute('data-site-tel-prefix')||''; var b=a.querySelector('b'); (b||a).textContent=pre+s.phoneDisplay; }
   });
   document.querySelectorAll('[data-site-email]').forEach(function(a){ if(s.email){ a.href='mailto:'+s.email; var t=a.querySelector('[data-site-email-text]'); if(t) t.textContent=s.email; } });
   var y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();

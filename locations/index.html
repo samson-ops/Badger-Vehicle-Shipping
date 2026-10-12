@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wisconsin Car Shipping Locations | Badger Vehicle Shipping</title>
-<meta name="description" content="Eight Badger Vehicle Shipping offices across Wisconsin: Madison, Waukesha, Kenosha, Janesville, Green Bay, Oshkosh, Fond du Lac and Eau Claire.">
+<meta name="description" content="Twelve Badger Vehicle Shipping offices across Wisconsin: Milwaukee, Madison, Green Bay, Kenosha, Waukesha, La Crosse, Wausau, Sheboygan and more.">
 <link rel="canonical" href="https://www.badgervehicleshipping.com/locations/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Wisconsin Car Shipping Locations | Badger Vehicle Shipping">
-<meta property="og:description" content="Eight Badger Vehicle Shipping offices across Wisconsin: Madison, Waukesha, Kenosha, Janesville, Green Bay, Oshkosh, Fond du Lac and Eau Claire.">
+<meta property="og:description" content="Twelve Badger Vehicle Shipping offices across Wisconsin: Milwaukee, Madison, Green Bay, Kenosha, Waukesha, La Crosse, Wausau, Sheboygan and more.">
 <meta property="og:url" content="https://www.badgervehicleshipping.com/locations/">
 <meta property="og:image" content="https://www.badgervehicleshipping.com/assets/logo.png">
 <meta property="og:site_name" content="Badger Vehicle Shipping">
@@ -80,7 +80,11 @@ nav.main a:hover{color:var(--bv-blue)}
 .mobile-nav.open{display:block}
 .mobile-nav .wrap{display:flex;flex-direction:column;padding-block:12px}
 .mobile-nav a{padding:12px 0;color:var(--bv-navy);text-decoration:none;font-weight:600;border-bottom:1px solid var(--bv-mist)}
-@media(max-width:900px){nav.main,.hdr-cta .bv-outline{display:none}.nav-toggle{display:inline-flex}}
+@media(max-width:900px){nav.main,.hdr-cta .bv-outline{display:none}.nav-toggle{display:inline-flex}
+  header.site .wrap{min-height:64px;gap:10px}.logo img{height:40px}
+  .hdr-cta{gap:8px}.hdr-cta .bv-primary{white-space:nowrap;padding:10px 14px;font-size:14px}
+  .topbar .wrap{justify-content:center}.topbar .tag{display:none}}
+@media(max-width:400px){.hdr-cta .bv-primary .num{display:none}}
 
 /* ---------- Hero ---------- */
 .hero{background:linear-gradient(180deg,var(--bv-mist) 0%,#fff 100%);padding-block:56px 72px;overflow:hidden;position:relative}
@@ -101,7 +105,18 @@ nav.main a:hover{color:var(--bv-blue)}
 .creds .lic svg{width:16px;height:16px;color:var(--bv-blue)}
 .quote-col{display:flex;justify-content:center}
 .quote-col .pquote{width:100%;max-width:440px}
-@media(max-width:960px){.hero .wrap{grid-template-columns:1fr}.points{grid-template-columns:1fr 1fr}}
+@media(max-width:960px){
+  .hero{padding-block:28px 48px}
+  .hero .wrap{grid-template-columns:1fr;gap:18px}
+  /* mobile: quote tool sits directly under the H1 */
+  .hero .wrap>div:first-child{display:contents}
+  .hero .crumbs,.hero .hero-pill{order:-3;margin-bottom:0}
+  .hero h1{order:-2;font-size:clamp(26px,7vw,34px)}
+  .hero .quote-col{order:-1}
+  .hero .lede{order:1;margin-top:4px}
+  .hero .points,.hero .hero-ctas{order:2}
+  .points{grid-template-columns:1fr 1fr}
+}
 @media(max-width:560px){.points{grid-template-columns:1fr}}
 
 /* ---------- Stats ---------- */
@@ -247,7 +262,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.badgervehicleshipping.com/"}, {"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.badgervehicleshipping.com/locations/"}]}</script>
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span><strong>Nationwide auto transport</strong> · Open &amp; enclosed · Door to door</span><span>Questions? <a data-site-tel href="tel:+16084202685">(608) 420-2685</a></span></div></div>
+<div class="topbar"><div class="wrap"><span class="tag"><strong>Nationwide auto transport</strong> · Open &amp; enclosed · Door to door</span><span>Questions? <a data-site-tel href="tel:+16084202685">(608) 420-2685</a></span></div></div>
 
 <header class="site">
   <div class="wrap">
@@ -262,7 +277,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
     </nav>
     <div class="hdr-cta">
       <a class="btn bv-outline" href="/#quote">Get a Quote</a>
-      <a class="btn bv-primary" data-site-tel data-site-tel-prefix="Call " href="tel:+16084202685">Call (608) 420-2685</a>
+      <a class="btn bv-primary" data-site-tel data-site-tel-prefix="Call " href="tel:+16084202685">Call <span class="num">(608) 420-2685</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -275,7 +290,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
 <section class="sec" style="background:var(--bv-mist)">
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span>Locations</span></nav>
-    <div class="sec-head"><span class="eyebrow">Wisconsin offices</span><h1 style="font-size:clamp(30px,4vw,46px);font-weight:800">Car Shipping Locations in Wisconsin</h1><p class="lede">Badger Vehicle Shipping has eight local offices across Wisconsin, from the Chippewa Valley to the Stateline. Each one books licensed, insured open and enclosed auto transport to and from anywhere in the United States, with door-to-door pickup and an all-in price before you commit. Pick the office nearest you for local phone support, or call the main line at <a href="tel:+16084202685">(608) 420-2685</a>.</p></div>
+    <div class="sec-head"><span class="eyebrow">Wisconsin offices</span><h1 style="font-size:clamp(30px,4vw,46px);font-weight:800">Car Shipping Locations in Wisconsin</h1><p class="lede">Badger Vehicle Shipping has twelve local offices across Wisconsin, from the Mississippi to Lake Michigan and from the Stateline to the Northwoods. Each one books licensed, insured open and enclosed auto transport to and from anywhere in the United States, with door-to-door pickup and an all-in price before you commit. Pick the office nearest you for local phone support, or call the main line at <a href="tel:+16084202685">(608) 420-2685</a>.</p></div>
     <div class="offices">
       <div class="office-tile"><span class="eyebrow">Green Bay, WI</span><h3><a href="/locations/green-bay-wi/">Car Shipping Green Bay</a></h3><p class="addr">225 S Monroe Ave Suite 133<br>Green Bay, WI 54301</p><a class="ph" href="tel:+19206787550">(920) 678-7550</a><a class="go" href="/locations/green-bay-wi/">Green Bay auto transport →</a></div>
       <div class="office-tile"><span class="eyebrow">Eau Claire, WI</span><h3><a href="/locations/eau-claire-wi/">Car Shipping Eau Claire</a></h3><p class="addr">306 S Barstow St #139<br>Eau Claire, WI 54701</p><a class="ph" href="tel:+17159997030">(715) 999-7030</a><a class="go" href="/locations/eau-claire-wi/">Eau Claire auto transport →</a></div>
@@ -285,6 +300,10 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
       <div class="office-tile"><span class="eyebrow">Madison, WI</span><h3><a href="/locations/madison-wi/">Car Shipping Madison</a></h3><p class="addr">10 E Doty St #620<br>Madison, WI 53703</p><a class="ph" href="tel:+16084202685">(608) 420-2685</a><a class="go" href="/locations/madison-wi/">Madison auto transport →</a></div>
       <div class="office-tile"><span class="eyebrow">Waukesha, WI</span><h3><a href="/locations/waukesha-wi/">Car Shipping Waukesha</a></h3><p class="addr">1601 E Racine Ave #450<br>Waukesha, WI 53186</p><a class="ph" href="tel:+12623846890">(262) 384-6890</a><a class="go" href="/locations/waukesha-wi/">Waukesha auto transport →</a></div>
       <div class="office-tile"><span class="eyebrow">Janesville, WI</span><h3><a href="/locations/janesville-wi/">Car Shipping Janesville</a></h3><p class="addr">101 N Parker Dr Suite 460<br>Janesville, WI 53545</p><a class="ph" href="tel:+16084014120">(608) 401-4120</a><a class="go" href="/locations/janesville-wi/">Janesville auto transport →</a></div>
+      <div class="office-tile"><span class="eyebrow">La Crosse, WI</span><h3><a href="/locations/la-crosse-wi/">Car Shipping La Crosse</a></h3><p class="addr">201 Main St Suite 550<br>La Crosse, WI 54601</p><a class="ph" href="tel:+16085495349">(608) 549-5349</a><a class="go" href="/locations/la-crosse-wi/">La Crosse auto transport →</a></div>
+      <div class="office-tile"><span class="eyebrow">Sheboygan, WI</span><h3><a href="/locations/sheboygan-wi/">Car Shipping Sheboygan</a></h3><p class="addr">1414 N Taylor Dr #652<br>Sheboygan, WI 53081</p><a class="ph" href="tel:+19202803485">(920) 280-3485</a><a class="go" href="/locations/sheboygan-wi/">Sheboygan auto transport →</a></div>
+      <div class="office-tile"><span class="eyebrow">Milwaukee, WI</span><h3><a href="/locations/milwaukee-wi/">Car Shipping Milwaukee</a></h3><p class="addr">411 E Wisconsin Ave #542<br>Milwaukee, WI 53202</p><a class="ph" href="tel:+14142613002">(414) 261-3002</a><a class="go" href="/locations/milwaukee-wi/">Milwaukee auto transport →</a></div>
+      <div class="office-tile"><span class="eyebrow">Wausau, WI</span><h3><a href="/locations/wausau-wi/">Car Shipping Wausau</a></h3><p class="addr">725 S 84th Ave #122<br>Wausau, WI 54401</p><a class="ph" href="tel:+17155199264">(715) 519-9264</a><a class="go" href="/locations/wausau-wi/">Wausau auto transport →</a></div>
     </div>
   </div>
 </section>
@@ -292,7 +311,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
   <div class="wrap">
     <div class="sec-head"><span class="eyebrow">Statewide</span><h2>Shipping a Car Anywhere in Wisconsin</h2></div>
     <div class="prose">
-      <p>Our offices sit on the state's main car-hauler corridors: I-94 at Kenosha, Waukesha and Eau Claire, I-90 at Madison and Janesville, and I-41 at Fond du Lac, Oshkosh and Green Bay. Between them we cover metro Milwaukee, Madison and Dane County, the Fox Valley, the Chippewa Valley, the Stateline, the Northwoods and the Lake Michigan shore. If your town is not listed on an office page, we still ship from it; carriers pick up across the entire state, and the instant quote tool prices any Wisconsin ZIP code.</p>
+      <p>Our offices sit on the state's main car-hauler corridors: I-94 at Milwaukee, Waukesha, Kenosha and Eau Claire, I-90 at Madison, Janesville and La Crosse, I-43 at Sheboygan, I-41 at Fond du Lac, Oshkosh and Green Bay, and I-39 at Wausau. Between them we cover metro Milwaukee, Madison and Dane County, the Fox Valley, the Chippewa Valley, the Coulee Region, the Stateline, the Northwoods and the Lake Michigan shore. If your town is not listed on an office page, we still ship from it; carriers pick up across the entire state, and the instant quote tool prices any Wisconsin ZIP code.</p>
       <p>Every office follows the same process: get a free quote, book with a vetted carrier, and track your vehicle to the door. <a href="/services/snowbird-car-shipping/">Snowbird routes</a> to Florida, Arizona and Texas run every fall and spring, and <a href="/services/enclosed-auto-transport/">enclosed transport</a> is available on every lane.</p>
     </div>
     <div class="hero-ctas" style="margin-top:26px"><a class="btn bv-primary" href="/#quote">Get an Instant Quote</a></div>
@@ -310,7 +329,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
       <div class="foot-brand"><img src="/assets/logo.webp" width="900" height="258" loading="lazy" alt="Badger Vehicle Shipping"><p>Licensed, insured nationwide auto transport. Open and enclosed carriers, door to door, in all 50 states.</p></div>
       <div><p class="foot-h">Company</p><ul><li><a href="/how-it-works/">How It Works</a></li><li><a href="/about/">About Us</a></li><li><a href="/car-shipping-cost/">Car Shipping Cost</a></li><li><a href="/car-shipping-checklist/">Preparation Checklist</a></li><li><a href="/cross-country-car-shipping/">Cross-Country Shipping</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/contact/">Contact</a></li></ul></div>
       <div><p class="foot-h">Services</p><ul><li><a href="/services/open-car-transport/">Open Car Transport</a></li><li><a href="/services/enclosed-auto-transport/">Enclosed Auto Transport</a></li><li><a href="/services/door-to-door-car-shipping/">Door-to-Door Car Shipping</a></li><li><a href="/services/expedited-car-shipping/">Expedited Car Shipping</a></li><li><a href="/services/snowbird-car-shipping/">Snowbird Car Shipping</a></li><li><a href="/services/military-car-shipping/">Military Car Shipping</a></li><li><a href="/services/state-to-state-car-shipping/">State-to-State Car Shipping</a></li><li><a href="/services/auction-car-transport/">Auction Car Transport</a></li><li><a href="/services/">All services</a></li></ul></div>
-      <div><p class="foot-h">Wisconsin Offices</p><ul><li><a href="/locations/green-bay-wi/">Green Bay, WI</a></li><li><a href="/locations/eau-claire-wi/">Eau Claire, WI</a></li><li><a href="/locations/kenosha-wi/">Kenosha, WI</a></li><li><a href="/locations/oshkosh-wi/">Oshkosh, WI</a></li><li><a href="/locations/fond-du-lac-wi/">Fond du Lac, WI</a></li><li><a href="/locations/madison-wi/">Madison, WI</a></li><li><a href="/locations/waukesha-wi/">Waukesha, WI</a></li><li><a href="/locations/janesville-wi/">Janesville, WI</a></li><li><a href="/locations/">All locations</a></li></ul></div>
+      <div><p class="foot-h">Wisconsin Offices</p><ul><li><a href="/locations/green-bay-wi/">Green Bay, WI</a></li><li><a href="/locations/eau-claire-wi/">Eau Claire, WI</a></li><li><a href="/locations/kenosha-wi/">Kenosha, WI</a></li><li><a href="/locations/oshkosh-wi/">Oshkosh, WI</a></li><li><a href="/locations/fond-du-lac-wi/">Fond du Lac, WI</a></li><li><a href="/locations/madison-wi/">Madison, WI</a></li><li><a href="/locations/waukesha-wi/">Waukesha, WI</a></li><li><a href="/locations/janesville-wi/">Janesville, WI</a></li><li><a href="/locations/la-crosse-wi/">La Crosse, WI</a></li><li><a href="/locations/sheboygan-wi/">Sheboygan, WI</a></li><li><a href="/locations/milwaukee-wi/">Milwaukee, WI</a></li><li><a href="/locations/wausau-wi/">Wausau, WI</a></li><li><a href="/locations/">All locations</a></li></ul></div>
       <div class="foot-contact"><p class="foot-h">Contact</p><a data-site-tel href="tel:+16084202685"><b>(608) 420-2685</b></a><a data-site-email href="mailto:info@badgervehicleshipping.com"><span data-site-email-text>info@badgervehicleshipping.com</span></a><span>Support when you need it.</span></div>
     </div>
     <div class="foot-bottom">
@@ -323,7 +342,7 @@ table.routes-t{width:100%;border-collapse:collapse;font-size:15px;min-width:520p
 <script>
 /* ===== SITE DETAILS — edit these ===== */
 window.SITE = {
-  phoneDisplay: '(608) 420-2685',
+  phoneDisplay: '(608) 420-2685', // already rendered into the HTML; JS only fills anything left blank
   phoneTel:     '+16084202685',
   email:        'info@badgervehicleshipping.com'
 };
@@ -331,7 +350,7 @@ window.SITE = {
   var s=window.SITE||{};
   document.querySelectorAll('[data-site-tel]').forEach(function(a){
     if(s.phoneTel) a.href='tel:'+s.phoneTel;
-    if(s.phoneDisplay){ var pre=a.getAttribute('data-site-tel-prefix')||''; var b=a.querySelector('b'); (b||a).textContent=pre+s.phoneDisplay; }
+    if(s.phoneDisplay && !/\d{3}/.test(a.textContent)){ var pre=a.getAttribute('data-site-tel-prefix')||''; var b=a.querySelector('b'); (b||a).textContent=pre+s.phoneDisplay; }
   });
   document.querySelectorAll('[data-site-email]').forEach(function(a){ if(s.email){ a.href='mailto:'+s.email; var t=a.querySelector('[data-site-email-text]'); if(t) t.textContent=s.email; } });
   var y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
